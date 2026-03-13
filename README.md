@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi, I'm Pranali Bhosale 👋
 
-<!--
-**bhosalepranali2005-web/bhosalepranali2005-web** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Electronics & Telecommunication Engineering Student  
+🔧 Interested in Embedded Systems, VLSI, IoT, and AI/ML  
 
-Here are some ideas to get you started:
+## 🚀 Skills
+- Python
+- Arduino
+- Embedded Systems
+- IoT
+- Machine Learning
+- Data Analysis
+- Raspberry Pi
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔬 Featured Projects
+🌾 AI-Driven IoT Bird Deterrent System  
+📡 Smart Agriculture Monitoring System  
+🚗 Vehicle Tracking System (GPS + GSM)  
+🤖 SMS Spam Classifier  
+📚 Book Recommendation Engine (KNN)
+
+## 📫 Connect with me
+LinkedIn: https://www.linkedin.com/in/pranali-bhosale-5237b3371/
