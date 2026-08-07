@@ -5,9 +5,12 @@
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,0,30,12,100,255,105,180&height=220&section=header&text=Pranali%20Bhosale&fontSize=48&fontColor=ffffff&animation=twinkling" width="100%" alt="Header Banner" />
   </a>
 
-  <h2>⚡ Electronics & Telecommunication Engineer | AI & Embedded Systems Developer ⚡</h2>
+  <!-- TYPING EFFECT -->
+  <a href="https://github.com/bhosalepranali2005-web">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=2500&pause=800&color=FF69B4&center=true&vcenter=true&width=500&lines=%E2%9C%A8+Electronics+%26+Telecommunication+Eng.;%F0%9F%A7%A0+AI+%26+Machine+Learning+Enthusiast;%F0%9F%94%8C+Embedded+Systems+%26+IoT+Dev;%E2%9A%A1+Always+Building+%2B+Learning..." alt="Typing SVG" />
+  </a>
 
-  <p><b>Hardware meets Intelligence | Building smart tech & ML models</b></p>
+  <p><b>Hardware meets Intelligence ⚡ | Building smart tech & ML models</b></p>
 
   <!-- CLICKABLE BADGES -->
   <a href="https://www.linkedin.com/in/pranali-bhosale/">
@@ -74,13 +77,13 @@
 
 ---
 
-### 📈 Contribution Grid
+### 🏆 Achievements & Activity
 
-<br />
 
 <div align="center">
+  <!-- CONTRIBUTION ACTIVITY GRAPH (STABLE) -->
   <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://ghchart.rshah.org/ff69b4/bhosalepranali2005-web" width="100%" alt="Pranali's Contribution Chart" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bhosalepranali2005-web&theme=react-dark&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
   </a>
 </div>
 
