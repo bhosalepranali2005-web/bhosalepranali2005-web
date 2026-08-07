@@ -35,7 +35,7 @@
   <a href="https://isocpp.org/">
     <img src="https://img.shields.io/badge/C%2B%2B-101010?style=for-the-badge&logo=cplusplus&logoColor=FF69B4" alt="C++ Docs" />
   </a>
-  <a href="https://en.wikipedia.org/embedded_c">
+  <a href="https://en.wikipedia.org/wiki/Embedded_C">
     <img src="https://img.shields.io/badge/Embedded_C-101010?style=for-the-badge&logo=c&logoColor=FF69B4" alt="Embedded C" />
   </a>
   <a href="https://www.arduino.cc/en/Guide">
@@ -77,14 +77,21 @@
 
 ---
 
-### 📊 GitHub Overview
+### 🏆 Achievements & Activity
 
 <div align="center">
+  <!-- TROPHY BADGES (STABLE) -->
   <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://github-readme-stats.vercel.app/api?username=bhosalepranali2005-web&show_icons=true&theme=synthwave&hide_border=true&title_color=FF69B4&icon_color=FF69B4&bg_color=0d1117" width="48%" alt="GitHub Stats" />
+    <img src="https://github-profile-trophy.vercel.app/?username=bhosalepranali2005-web&theme=synthwave&no-frame=true&no-bg=true&margin-w=15" width="100%" alt="GitHub Trophies" />
   </a>
+</div>
+
+<br />
+
+<div align="center">
+  <!-- CONTRIBUTION ACTIVITY GRAPH (STABLE) -->
   <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhosalepranali2005-web&layout=compact&theme=synthwave&hide_border=true&title_color=FF69B4&bg_color=0d1117" width="48%" alt="Top Languages" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bhosalepranali2005-web&theme=react-dark&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
   </a>
 </div>
 
