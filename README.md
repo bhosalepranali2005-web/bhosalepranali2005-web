@@ -59,37 +59,29 @@
 
 ### 📌 Featured Builds
 
-> <a href="https://github.com/bhosalepranali2005-web?tab=repositories"><b>🌿 AgriGuard AI</b></a>  
+> <a href="https://github.com/bhosalepranali2005-web/AI-Driven-Swarm-IoT-Bird-Deterrent-System-with-Predictive-Adaptive-Crop-Protection"><b>🌿 AgriGuard AI</b></a>  
 > *AI-driven crop protection & wild animal deterrent system using computer vision & IoT.*  
 > `<a href="https://docs.ultralytics.com/">YOLO</a>` • `<a href="https://www.python.org/">Python</a>` • `<a href="https://www.raspberrypi.com/">Raspberry Pi</a>`
 
-> <a href="https://github.com/bhosalepranali2005-web?tab=repositories"><b>🛰️ Smart Agriculture Monitoring</b></a>  
+> <a href="https://github.com/Iot-94240-PranaliBhosale-sunbeam/Smart_Environment_Monitoring_System"><b>🛰️ Smart Agriculture Monitoring</b></a>  
 > *Real-time environmental sensor network and field monitoring node.*  
 > `<a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a>` • `Sensors` • `Embedded C`
 
-> <a href="https://github.com/bhosalepranali2005-web?tab=repositories"><b>📍 Vehicle Tracking System</b></a>  
+> <a href="https://github.com/bhosalepranali2005-web/Major-Projects"><b>📍 Vehicle Tracking System</b></a>  
 > *Hardware tracking unit with realtime updates over cellular network.*  
 > `GPS` • `GSM` • `Microcontrollers`
 
-> <a href="https://github.com/bhosalepranali2005-web?tab=repositories"><b>📩 SMS Spam Classifier</b></a>  
+> <a href="https://github.com/bhosalepranali2005-web/sms_text_classifier"><b>📩 SMS Spam Classifier</b></a>  
 > *NLP model trained to detect and filter malicious/spam messages.*  
 > `<a href="https://scikit-learn.org/">Scikit-Learn</a>` • `<a href="https://www.python.org/">Python</a>`
 
 ---
 
-### 🏆 Achievements & Activity
-
-<div align="center">
-  <!-- TROPHY BADGES (STABLE) -->
-  <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://github-profile-trophy.vercel.app/?username=bhosalepranali2005-web&theme=synthwave&no-frame=true&no-bg=true&margin-w=15" width="100%" alt="GitHub Trophies" />
-  </a>
-</div>
+### 📈 Contribution Activity
 
 <br />
 
 <div align="center">
-  <!-- CONTRIBUTION ACTIVITY GRAPH (STABLE) -->
   <a href="https://github.com/bhosalepranali2005-web">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=bhosalepranali2005-web&theme=react-dark&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
   </a>
