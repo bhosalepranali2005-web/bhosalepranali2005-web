@@ -1,97 +1,109 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-header {
+      text-align: center;
+      max-width: 600px;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 2rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--accent);
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-header">
+    <img id="avatar" class="avatar" src="" alt="Avatar" />
+    <h1 id="name" style="margin: 0.5rem 0 0.2rem;"></h1>
+    <p id="bio" style="color: #8b949e;"></p>
+    <a id="github-link" href="#" target="_blank" style="color: var(--accent);">View GitHub Profile →</a>
+  </div>
 
-  <!-- GLOWING HEADER BANNER -->
-  <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,0,30,12,100,255,105,180&height=220&section=header&text=Pranali%20Bhosale&fontSize=48&fontColor=ffffff&animation=twinkling" width="100%" alt="Header Banner" />
-  </a>
+  <div id="repos" class="grid"></div>
 
-  <!-- TYPING EFFECT -->
-  <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=2500&pause=800&color=FF69B4&center=true&vcenter=true&width=500&lines=%E2%9C%A8+Electronics+%26+Telecommunication+Eng.;%F0%9F%A7%A0+AI+%26+Machine+Learning+Enthusiast;%F0%9F%94%8C+Embedded+Systems+%26+IoT+Dev;%E2%9A%A1+Always+Building+%2B+Learning..." alt="Typing SVG" />
-  </a>
+  <script>
+    const USERNAME = 'YOUR_GITHUB_USERNAME';
 
-  <p><b>Hardware meets Intelligence ⚡ | Building smart tech & ML models</b></p>
+    async function loadProfile() {
+      // 1. Fetch user data
+      const userRes = await fetch(`https://api.github.com/users/${USERNAME}`);
+      const user = await userRes.json();
 
-  <!-- CLICKABLE BADGES -->
-  <a href="https://www.linkedin.com/in/pranali-bhosale/">
-    <img src="https://img.shields.io/badge/LinkedIn-FF69B4?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/bhosalepranali2005-web?tab=repositories">
-    <img src="https://img.shields.io/badge/Projects-Explore_All-101010?style=for-the-badge&logo=github&logoColor=FF69B4" alt="GitHub Repositories" />
-  </a>
+      document.getElementById('avatar').src = user.avatar_url;
+      document.getElementById('name').textContent = user.name || user.login;
+      document.getElementById('bio').textContent = user.bio || 'Developer';
+      document.getElementById('github-link').href = user.html_url;
 
-</div>
+      // 2. Fetch public repos sorted by updated date
+      const reposRes = await fetch(`https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=6`);
+      const repos = await reposRes.json();
 
-<br />
+      const container = document.getElementById('repos');
+      container.innerHTML = repos.map(repo => `
+        <a class="card" href="${repo.html_url}" target="_blank">
+          <h3>${repo.name}</h3>
+          <p style="font-size: 0.9rem; margin: 0;">${repo.description || 'No description provided.'}</p>
+          <div class="meta">
+            ★ ${repo.stargazers_count} | ⑂ ${repo.forks_count} ${repo.language ? `| ${repo.language}` : ''}
+          </div>
+        </a>
+      `).join('');
+    }
 
----
-
-### ⚡ Technical Skills
-
-<p align="center">
-  <a href="https://docs.python.org/3/">
-    <img src="https://img.shields.io/badge/Python-101010?style=for-the-badge&logo=python&logoColor=FF69B4" alt="Python Docs" />
-  </a>
-  <a href="https://isocpp.org/">
-    <img src="https://img.shields.io/badge/C%2B%2B-101010?style=for-the-badge&logo=cplusplus&logoColor=FF69B4" alt="C++ Docs" />
-  </a>
-  <a href="https://en.wikipedia.org/wiki/Embedded_C">
-    <img src="https://img.shields.io/badge/Embedded_C-101010?style=for-the-badge&logo=c&logoColor=FF69B4" alt="Embedded C" />
-  </a>
-  <a href="https://www.arduino.cc/en/Guide">
-    <img src="https://img.shields.io/badge/Arduino-101010?style=for-the-badge&logo=arduino&logoColor=FF69B4" alt="Arduino Guide" />
-  </a>
-  <a href="https://www.raspberrypi.com/documentation/">
-    <img src="https://img.shields.io/badge/Raspberry_Pi-101010?style=for-the-badge&logo=raspberrypi&logoColor=FF69B4" alt="Raspberry Pi Docs" />
-  </a>
-  <a href="https://www.tensorflow.org/learn">
-    <img src="https://img.shields.io/badge/TensorFlow-101010?style=for-the-badge&logo=tensorflow&logoColor=FF69B4" alt="TensorFlow Learn" />
-  </a>
-  <a href="https://pytorch.org/tutorials/">
-    <img src="https://img.shields.io/badge/PyTorch-101010?style=for-the-badge&logo=pytorch&logoColor=FF69B4" alt="PyTorch Tutorials" />
-  </a>
-  <a href="https://docs.opencv.org/">
-    <img src="https://img.shields.io/badge/OpenCV-101010?style=for-the-badge&logo=opencv&logoColor=FF69B4" alt="OpenCV Docs" />
-  </a>
-</p>
-
----
-
-### 📌 Featured Builds
-
-> <a href="https://github.com/bhosalepranali2005-web/AI-Driven-Swarm-IoT-Bird-Deterrent-System-with-Predictive-Adaptive-Crop-Protection"><b>🌿 AgriGuard AI</b></a>  
-> *AI-driven crop protection & wild animal deterrent system using computer vision & IoT.*  
-> `<a href="https://docs.ultralytics.com/">YOLO</a>` • `<a href="https://www.python.org/">Python</a>` • `<a href="https://www.raspberrypi.com/">Raspberry Pi</a>`
-
-> <a href="https://github.com/Iot-94240-PranaliBhosale-sunbeam/Smart_Environment_Monitoring_System"><b>🛰️ Smart Agriculture Monitoring</b></a>  
-> *Real-time environmental sensor network and field monitoring node.*  
-> `<a href="https://www.espressif.com/en/products/socs/esp32">ESP32</a>` • `Sensors` • `Embedded C`
-
-> <a href="https://github.com/bhosalepranali2005-web/Major-Projects"><b>📍 Vehicle Tracking System</b></a>  
-> *Hardware tracking unit with realtime updates over cellular network.*  
-> `GPS` • `GSM` • `Microcontrollers`
-
-> <a href="https://github.com/bhosalepranali2005-web/sms_text_classifier"><b>📩 SMS Spam Classifier</b></a>  
-> *NLP model trained to detect and filter malicious/spam messages.*  
-> `<a href="https://scikit-learn.org/">Scikit-Learn</a>` • `<a href="https://www.python.org/">Python</a>`
-
----
-
-### 🏆 Achievements & Activity
-
-
-<div align="center">
-  <!-- CONTRIBUTION ACTIVITY GRAPH (STABLE) -->
-  <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bhosalepranali2005-web&theme=react-dark&bg_color=0d1117&color=ff69b4&line=ff69b4&point=ffffff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-  </a>
-</div>
-
-<br />
-
-<!-- FOOTER BANNER -->
-<div align="center">
-  <a href="https://github.com/bhosalepranali2005-web">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=24,0,30,12,100,255,105,180&height=30&section=footer" width="100%" alt="Footer" />
-  </a>
-</div>
+    loadProfile();
+  </script>
+</body>
+</html>
