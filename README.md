@@ -75,7 +75,7 @@
   <div id="repos" class="grid"></div>
 
   <script>
-    const USERNAME = 'YOUR_GITHUB_USERNAME';
+    const USERNAME = 'bhosalepranali2005-web';
 
     async function loadProfile() {
       // 1. Fetch user data
